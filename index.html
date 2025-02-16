@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferent Sonia Portofolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" class="navbar__logo">S<span> F</span></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__links" onclick="scrollToHome()">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links" onclick="scrollToAboutMe()">About Me</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links" onclick="scrollToProjects()">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links" onclick="scrollToContact()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main__container" id="home">
+        <div class="main__content">
+            <div class="typewritter"><span class="typewritter-text"></span></div>
+        </div>
+    </div>
+
+    <div class="about__container" id="about__me">
+        <div class="about__content">
+            <img class="about__img" src="images/undraw_programmer_raqr.svg" alt="Image">
+            <div class="about__text">
+                <h1>About</h1>
+                <p>Hi! I'm Sonia Ferent, a computer science student passionate about technology, coding, and problem-solving. I love exploring new innovations in the IT world and turning ideas into digital solutions. Whether it's programming, learning new technologies, or working on creative projects, I'm always excited to expand my knowledge and skills.</p>
+                <p>---------------------</p>
+                <p>Full Name: Sonia Noemi Ferent</p>
+                <p>Birth Date: October 14, 2004</p>
+                <p>Location: Cluj-Napoca, România</p>
+                <p>Email: ferentsonia@yahoo.com</p>
+                <button class="btn">Show Fun Fact</button>
+                <p class="funfact"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects__container" id="projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__content">
+            <div class="project__card">
+                <div class="card__title">Toy Interpreter</div>
+                <div class="card__description">
+                    Built a Java-based interpreter supporting arithmetic, control flow, and file operations, along with concurrency through fork statements. Utilized FXML for a modular GUI and implemented MVC architecture for maintainability. Integrated efficient error handling and a dynamic interactive menu for testing.
+                </div>
+            </div>
+
+            <div class="project__card">
+                <div class="card__title">Star Catalogue</div>
+                <div class="card__description">
+                    Developed a C++ Qt application to manage and visualize star data. Implemented real-time constellation filtering, star addition with validation, and file I/0 for persistence. Utilized Qt Model/View architecture for dynamic updates and interactive star visualization.
+                </div>
+            </div>
+
+            <div class="project__card">
+                <div class="card__title">Tic-Tac-Toe (X & O)</div>
+                <div class="card__description">
+                    Developed a Python-based Tic-Tac-Toe game using Tkinter for the GUI. Features include turn-based gameplay, random move generation for the computer, and automatic win detection. Implemented event-driven programming and state management for smooth and interactive user experience.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact__container" id="contact">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__content">
+            <div class="contact__info__wrapper">
+                <ul class="contact__info__list">
+                    <li class="contact__info">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+40(0)741454274">+40(0)741454274</a>
+                    </li>
+                    <li class="contact__info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:ferentsonia@yahoo.com">ferentsonia@yahoo.com</a>
+                    </li>
+                    <li class="contact__info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="https://facebook.com/sonia.ferent" target="_blank">Facebook</a>
+                    </li>
+                    <li class="contact__info">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/sonia-ferent-1572a4332" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact__form__wrapper">
+                <form class="contact__form">
+                    <label for="first__name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last__name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button class="btn1">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
