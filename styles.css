@@ -93,6 +93,7 @@ html {
 
 .main__content .typewritter{
     font-size: 4rem;
+    font-weight: bold;
     color: #b2b1b3;
 }
 
@@ -125,6 +126,7 @@ html {
     height: auto;
     display: block;
     margin: 0 auto;
+    align-self: flex-start;
 }
 
 .about__text {
@@ -420,11 +422,11 @@ html {
 
     .main__container {
         flex-direction: column;
-        height: 150vh;
+        height: 110vh;
     }
 
     .about__container {
-        height: 150vh;
+        height: 140vh;
     }
 
     .about__content {
@@ -445,7 +447,7 @@ html {
     }
 
     .projects__container {
-        height: 150vh; 
+        height: 140vh; 
         padding: 40px 20px; 
     }
 
